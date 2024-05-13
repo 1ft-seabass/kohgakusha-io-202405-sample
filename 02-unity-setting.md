@@ -70,7 +70,7 @@ Name が聞かれるので NodeRedPostOpenAI と入力して Create and Add を�
 
 エディタが起動します。NodeRedPostOpenAI のスクリプトは以下を記述して保存します。
 
-[csharp]
+```csharp
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -157,14 +157,14 @@ public class NodeRedPostOpenAI : MonoBehaviour, IPointerClickHandler
     }
 
 }
-[/csharp]
+```
 
 保存できたら以下のコードに注目します。
 
-[csharp]
+```csharp
     // アクセスする URL
     string urlNodeRED = "ここにサーバーURLを入れる";
-[/csharp]
+```
 
 「ここにサーバーURLを入れる」の部分を、今回の URL http://127.0.0.1:1880/api/openai に変更しておきます。
 
