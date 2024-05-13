@@ -1,0 +1,77 @@
+[
+    {
+        "id": "583b44be9c6f84cc",
+        "type": "http in",
+        "z": "ddce1a1bf27477a5",
+        "name": "",
+        "url": "/api/openai",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "50852ca2ccd0f94c"
+            ]
+        ]
+    },
+    {
+        "id": "50852ca2ccd0f94c",
+        "type": "change",
+        "z": "ddce1a1bf27477a5",
+        "name": "データ設定",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "650a959e86b86765"
+            ]
+        ]
+    },
+    {
+        "id": "650a959e86b86765",
+        "type": "simple-chatgpt",
+        "z": "ddce1a1bf27477a5",
+        "name": "",
+        "Token": "",
+        "Model": "",
+        "SystemSetting": "",
+        "functions": "",
+        "functionsType": "str",
+        "function_call": "auto",
+        "function_callType": "str",
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "1db603c4ac2a26ef"
+            ]
+        ]
+    },
+    {
+        "id": "1db603c4ac2a26ef",
+        "type": "http response",
+        "z": "ddce1a1bf27477a5",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 240,
+        "wires": []
+    }
+]
