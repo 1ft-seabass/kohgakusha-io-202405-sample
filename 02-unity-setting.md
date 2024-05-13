@@ -70,7 +70,7 @@ Name が聞かれるので NodeRedPostOpenAI と入力して Create and Add を�
 
 エディタが起動します。NodeRedPostOpenAI のスクリプトは以下を記述して保存します。
 
-<div>[csharp]
+[csharp]
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -157,14 +157,14 @@ public class NodeRedPostOpenAI : MonoBehaviour, IPointerClickHandler
     }
 
 }
-[/csharp]</div>
+[/csharp]
 
 保存できたら以下のコードに注目します。
 
-<div>[csharp]
+[csharp]
     // アクセスする URL
     string urlNodeRED = "ここにサーバーURLを入れる";
-[/csharp]</div>
+[/csharp]
 
 「ここにサーバーURLを入れる」の部分を、今回の URL http://127.0.0.1:1880/api/openai に変更しておきます。
 
@@ -223,3 +223,11 @@ Text (TMP) をクリックすると名前が編集できるので Text1 と入�
 
 これで Unity の準備はできました。
 
+## この記事の注意点
+
+今回はテキストの表示は英語のみが表示される TextMeshPro のデフォルトで行っています。そのため、質問内容も Hello! という英語です。
+
+もしも、質問内容を日本語で質問してテキストで日本語を表示したい場合は、以下の記事などを参考に TextMeshPro のフォントを日本語適用してから質問内容を日本語にして試してみてください。
+
+- \[Unity\] Text Mesh Proで日本語を表示する方法
+  - https://zenn.dev/kametani256/articles/63c083ab318136
