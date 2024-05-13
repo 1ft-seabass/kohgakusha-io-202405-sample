@@ -1,9 +1,3 @@
----
-title: 2024 年 5 月執筆 GitHub
-slug: 02-unity-setting
-image_path: images/02-unity-setting/
----
-
 ![02-unity-setting_23.png](images/02-unity-setting/02-unity-setting_23.png)
 
 Hierarchy を確認します。
